@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body #menu {
+  display: none;
+  font-family: "Inter", sans-serif;
+}
+body #container {
+  height: 85vh;
+  width: 75vw;
+}
+body #container header nav ul {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+body #container header nav ul li:not(first-child) {
+  list-style: none;
+  margin: 0 2%;
+}
+body #container header nav ul li:not(first-child) a {
+  text-decoration: none;
+  color: #5d5f79;
+  font-size: 13px;
+  transition: color 0.1s ease-in-out;
+}
+body #container header nav ul li:not(first-child) a:hover {
+  color: #f15e50;
+}
+body #container header nav ul li:first-child {
+  margin-right: 53%;
+}
+body #container header nav ul li:last-child {
+  display: none;
+}
+body #container main {
+  height: 78vh;
+  font-family: "Inter", sans-serif;
+}
+body #container main #top {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+body #container main #top .left {
+  flex: 50%;
+  height: 100%;
+  margin-right: 2%;
+}
+body #container main #top .left .image {
+  height: 60%;
+}
+body #container main #top .left .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container main #top .left .content .bright {
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container main #top .left .content .bright h1 {
+  font-size: 40px;
+  color: #00001a;
+}
+body #container main #top .left .content .promise {
+  font-size: 15px;
+  color: #5d5f79;
+  line-height: 20px;
+}
+body #container main #top .left .content .promise button {
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 120px;
+  margin-top: 30px;
+  background-color: #f15e50;
+  color: #fffdfa;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+body #container main #top .left .content .promise button:hover {
+  background-color: #00001a;
+}
+body #container main #top .right {
+  flex: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #00001a;
+  color: #fffdfa;
+  padding: 0 2%;
+}
+body #container main #top .right #title {
+  font-size: 38px;
+  color: #e9ab53;
+}
+body #container main #top .right hr {
+  width: 100%;
+}
+body #container main #top .right div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #c5c6ce;
+}
+body #container main #top .right div h2 {
+  color: #fffdfa;
+  font-weight: lighter;
+  padding-bottom: 7px;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+  font-weight: 400;
+}
+body #container main #top .right div h2:hover {
+  color: #e9ab53;
+}
+body #container main #bottom {
+  height: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -35px;
+}
+body #container main #bottom div {
+  width: 100%;
+  height: 70%;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #container main #bottom div .pics {
+  margin-right: -5%;
+}
+body #container main #bottom div .write-up {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #5d5f79;
+  line-height: 15px;
+}
+body #container main #bottom div .write-up .num {
+  font-size: 30px;
+  color: #c5c6ce;
+  font-weight: bold;
+  justify-content: flex-start;
+}
+body #container main #bottom div .write-up .action {
+  color: #00001a;
+  font-size: 15px;
+  font-weight: bolder;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+body #container main #bottom div .write-up .action:hover {
+  color: #f15e50;
+}
+
+@media screen and (max-width: 1160px) {
+  #container header nav ul li:first-child {
+    margin-right: 45% !important;
+  }
+  #container main #top .content .bright h1 {
+    font-size: 35px !important;
+  }
+  #container main #top .content .promise button {
+    margin-top: 40px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    height: 110vh;
+    overflow-x: hidden;
+  }
+  body #menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -70vw;
+    height: 100vh;
+    width: 70vw;
+    background-color: #fffdfa;
+    transition: left 0.2s ease-in-out;
+  }
+  body #menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  body #menu ul li {
+    list-style: none;
+    margin: 20px 0 20px 10%;
+  }
+  body #menu ul li a {
+    text-decoration: none;
+    color: #00001a;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  body #menu ul li:first-child {
+    margin: 30px 0 50px 80%;
+    cursor: pointer;
+  }
+  body #container {
+    height: 100vh;
+    width: 90%;
+  }
+  body #container header nav ul {
+    margin-bottom: 20px !important;
+  }
+  body #container header nav ul li:not(first-child) {
+    display: none;
+  }
+  body #container header nav ul li:first-child {
+    display: block;
+    margin-right: 80% !important;
+  }
+  body #container header nav ul li:last-child {
+    display: block !important;
+    cursor: pointer;
+  }
+  body main {
+    height: 230vh !important;
+  }
+  body main #top {
+    flex-direction: column;
+  }
+  body main #top .left {
+    flex: 50%;
+    height: 100%;
+    margin-right: 2%;
+  }
+  body main #top .left .image {
+    height: 50%;
+  }
+  body main #top .left .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body main #top .left .content .bright h1 {
+    font-size: 30px;
+  }
+  body main #top .left .content button {
+    height: 32px !important;
+    width: 140px !important;
+  }
+  body main #top .right {
+    flex: 30% !important;
+    padding: 0 7% !important;
+    margin-top: 50px;
+  }
+  body main #top .right #title {
+    font-size: 35px !important;
+  }
+  body #bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -10% !important;
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 644px) {
+  body #container header nav ul li:first-child {
+    margin-right: 65% !important;
+  }
+}/*# sourceMappingURL=news.css.map */

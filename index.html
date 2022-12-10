@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="news.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+
+<body>
+  <!-- side menu -->
+  <div id="menu">
+    <ul>
+      <li id="close-menu"><img src="icon-menu-close.svg" alt="icon-menu-close" height="20px"></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New</a></li>
+      <li><a href="#">Popular</a></li>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">Categories</a></li>
+
+    </ul>
+  </div>
+  <div id="container">
+    <header>
+      <nav>
+        <ul>
+          <li><img src="logo.svg" alt="logo" height="30px"></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+          <li id="open-menu"><img src="icon-menu.svg" alt="icon-menu" height="18px" width="40px"></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="top">
+        <div class="left">
+          <div class="image">
+            <picture>
+              <source srcset="image-web-3-mobile.jpg" alt="image-web-3-mobile" media="(max-width:800px)" />
+              <img src="image-web-3-desktop.jpg" alt="image-web-3-desktop" height="100%" width="100%" />
+            </picture>
+          </div>
+          <div class="content">
+            <div class="bright">
+              <h1> The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="promise">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the
+              people.
+              But is it really fulfilling its promise?
+              <br>
+              <button> Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div id="title">New</div>
+          <div class="talk">
+            <h2>Hydrogen VS Electric Cars</h2>
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </div>
+          <hr>
+          <div class="talk">
+            <h2>The Downsides of AI Artistry</h2>
+            What are the possible adverse effects of on-demand AI image generation?
+          </div>
+          <hr>
+          <div class="talk">
+            <h2>Is VC Funding Drying Up?</h2>
+            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div>
+          <div class="pics">
+            <img src="image-retro-pcs.jpg" alt="image-retro-pcs" height="100%" width="60%">
+          </div>
+          <div class="write-up">
+            <div class="num">01</div>
+            <div class="action">Reviving Retro PCs</div>
+            What happens when old PCs are given modern upgrades?
+          </div>
+        </div>
+        <div>
+          <div class="pics">
+            <img src="image-top-laptops.jpg" alt="image-top-laptops" height="100%" width="60%">
+          </div>
+          <div class="write-up">
+            <div class="num">01</div>
+            <div class="action">Reviving Retro PCs</div>
+            What happens when old PCs are given modern upgrades?
+          </div>
+        </div>
+        <div>
+          <div class="pics">
+            <img src="image-gaming-growth.jpg" alt="image-gaming-growth" height="100%" width="60%">
+          </div>
+          <div class="write-up">
+            <div class="num">01</div>
+            <div class="action">Reviving Retro PCs</div>
+            What happens when old PCs are given modern upgrades?
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="news.js"></script>
+</body>
+
+</html>
