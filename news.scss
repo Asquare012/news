@@ -266,11 +266,9 @@ body {
 @media screen and(max-width:800px) {
     body {
         height: 110vh;
-        overflow-x: hidden;
 
         // side-menu
         #menu {
-            display: block;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -339,7 +337,7 @@ body {
                 flex-direction: column;
 
                 .left {
-                    flex: 50%;
+                    flex: 60% !important;
                     height: 100%;
                     margin-right: 2%;
 
@@ -366,13 +364,16 @@ body {
                 }
 
                 .right {
-                    flex: 30% !important;
+                    flex: 40% !important;
                     padding: 0 7% !important;
-                    margin-top: 50px;
+                    margin-top: 80px;
 
                     #title {
                         font-size: 35px !important;
+                    }
 
+                    h2 {
+                        font-size: 16px;
                     }
                 }
             }
