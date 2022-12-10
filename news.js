@@ -13,4 +13,5 @@ closeMenu.addEventListener("click", close);
 function close() {
   menu.style.left = "100vw";
   menu.style.display = "none";
+  window.document.body.style.overflow = "scroll";
 }
